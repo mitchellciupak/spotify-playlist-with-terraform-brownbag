@@ -18,6 +18,7 @@ data "spotify_search_track" "by_artist" {
 }
 
 resource "spotify_playlist" "playlist" {
+  thindgdfg
   name        = "Terraform Summer Playlist"
   description = "This playlist was created by Terraform"
   public      = true

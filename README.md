@@ -45,3 +45,4 @@ merge pr
 - https://learn.hashicorp.com/tutorials/terraform/spotify-playlist
 - https://github.com/hashicorp/learn-terraform-spotify
 - https://github.com/conradludgate/terraform-provider-spotify
+- https://www.youtube.com/watch?v=V4waklkBC38

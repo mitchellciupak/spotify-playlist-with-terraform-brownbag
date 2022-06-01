@@ -1,14 +1,11 @@
 # Spotify-Playlist-with-Terraform-IaC
-## Brown Bag
-## Time
-* 50 Min Total
-* Make Most of the Time Workshop Based
-## Audience
-* DTS
-## Scope == What is DevOps? Introduction & Workshop
-* Pipelines
-* GitHub
-* IaC
+This is the Terraform Repo and presentation resources for the NIDC Introduction to IaC brownbag.
 
-## Description
-Have em commit to spotify terraform iac, merge, see pipeline, and see the playlist
+## Agenda
+--> take a look at the intro video
+
+## Contributing Rules
+
+
+## Resources
+- https://learn.hashicorp.com/tutorials/terraform/spotify-playlist

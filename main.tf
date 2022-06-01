@@ -11,6 +11,24 @@ provider "spotify" {
   api_key = var.spotify_api_key
 }
 
+data "spotify_track" "overkill" {
+  url = "https://open.spotify.com/track/4XdaaDFE881SlIaz31pTAG"
+
+  ## Computed
+  # name = "Overkill"
+  # artists = ["0qPGd8tOMHlFZt8EA1uLFY"]
+  # album = "64ey3KHg3uepidKmJrb4ka"
+}
+
+data "spotify_track" "blackwater" {
+  spotify_id = "4lE6N1E0L8CssgKEUCgdbA"
+
+  ## Computed
+  # name = "Blackwater"
+  # artists = ["0qPGd8tOMHlFZt8EA1uLFY"]
+  # album = "1AUS845POFhV3oDytPImEZ"
+}
+
 data "spotify_search_track" "by_artist" {
   artist = "Dolly Parton"
   #  album = "Jolene"
@@ -25,7 +43,7 @@ resource "spotify_playlist" "playlist" {
   tracks = [
     data.spotify_search_track.by_artist.tracks[0].id,
     data.spotify_search_track.by_artist.tracks[1].id,
-    data.spotify_search_track.by_artist.tracks[2].id,
-    data.spotify_search_track.by_artist.tracks[4].id,
+    data.spotify_track.by_artist.blackwater.id,
+    data.spotify_track.by_artist.overkill.id,
   ]
 }

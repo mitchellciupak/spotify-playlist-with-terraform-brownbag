@@ -7,6 +7,7 @@
 ##################################
 
 def Introduce_DevOps():
+    print("where the info is") 
     return
 def Introduce_Piplines():
     return

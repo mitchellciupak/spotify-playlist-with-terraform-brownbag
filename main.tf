@@ -43,7 +43,7 @@ resource "spotify_playlist" "playlist" {
   tracks = [
     data.spotify_search_track.by_artist.tracks[0].id,
     data.spotify_search_track.by_artist.tracks[1].id,
-    data.spotify_track.by_artist.blackwater.id,
-    data.spotify_track.by_artist.overkill.id,
+    data.spotify_track.blackwater.id,
+    data.spotify_track.overkill.id,
   ]
 }

@@ -40,14 +40,17 @@ Please Refer to the [./presentation/IaC_brownbag_CreateAGitHubAccount.pdf](https
 ### **Step 2: Navigate to The 'spotify-playlist-with-terraform-brownbag' Repository**
 Use the following link ot get to the 'spotify-playlist-with-terraform-brownbag' Repository: https://github.com/mitchellciupak/spotify-playlist-with-terraform-brownbag
 ### **Step 3: Add your song to [./main.tf](https://github.com/mitchellciupak/spotify-playlist-with-terraform-brownbag/blob/main/main.tf)**
-1. Go to [./main.tf](https://github.com/mitchellciupak/spotify-playlist-with-terraform-brownbag/blob/main/main.tf) and select 'fork and contibute' in the top right corner. This will automatically fork the original repository into your own account.
-2. Add your song as a data element
-3. Add that song to the playlist
-4. Commit
-### **Step 4: Make PR**
-1. Go to [spotify-playlist-with-terraform-brownbag Pull Requests](https://github.com/mitchellciupak/spotify-playlist-with-terraform-brownbag/pulls)
-2. Create a New pull request
-3. 
+1. Go to [./main.tf](https://github.com/mitchellciupak/spotify-playlist-with-terraform-brownbag/blob/main/main.tf) and select 'fork this project and edit this file' in the top right corner. This will automatically fork the original repository into your own account.
+![3.1](assets/3.1.jpg)
+2. Add your song as a data element. Add that data element to the playlist. Click 'Propose Change'.
+![3.2](assets/3.2.jpg)
+### **Step 4: Make a Pull Request**
+1. Validate that you are pulling in the right commit and click 'Create Pull Request'.
+![4.1](assets/4.1.jpg)
+2. Click 'Create Pull Request' Again.
+![4.2](assets/4.2.jpg)
+3. Once you are on a page similar to this, you have sucessfully made a PR.
+![4.3](assets/4.3.jpg)
 ## Usage
 If you are using vs code, open the directory with the workspace ./brownbag.code-workspace or refer to the following json for potential tasks
 ```

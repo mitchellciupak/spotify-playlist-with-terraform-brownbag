@@ -8,10 +8,26 @@
 		"version": "2.0.0",
 		"tasks": [
 			{
-				"label": "run",
+				"label": "tf-install",
 				"type": "shell",
-				"command": "ls"
+				"command": "${workspaceFolder}/scripts/tf-install.sh"
 			},
+			{
+				"label": "tf-init",
+				"type": "shell",
+				"command": "cd ${workspaceFolder} && terraform init"
+			},
+			{
+				"label": "run-proxy",
+				"type": "shell",
+				"command": "${workspaceFolder}/scripts/run-proxy.sh"
+			},
+			{
+				"label": "tf-apply",
+				"type": "shell",
+				"command": "cd ${workspaceFolder} && terraform apply"
+			},
+
 		]
 	},
 	"launch": { // CRTL + SHIFT + D -> Launch
@@ -27,6 +43,10 @@
 	},
 	"settings": {},
 	"extensions": {
-		"recommendations": ["ms-vscode-remote.remote-containers"]
+		"recommendations": [
+			"ms-vscode-remote.remote-containers",
+			"ms-vscode-remote.remote-wsl",
+			"HashiCorp.terraform"
+		]
 	}
 }

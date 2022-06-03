@@ -22,7 +22,7 @@ data "spotify_track" "ninetofive_dollyp" {
 data "spotify_track" "jolene_dollyp" {
   # Take a look at the url below --> track == 5fdhThPDe6jQQDqCyWrdAn
   # https://open.spotify.com/track/5fdhThPDe6jQQDqCyWrdAn?si=615eb81192da4028
-  spotify_id = "5fdhThPDe6jQQDqCyWrdAn"
+  spotify_id = "5fdhThPDe6jQQDqCyWrdAn" 
 }
 
 ## List of Songs by Artist Search
@@ -36,7 +36,7 @@ data "spotify_search_track" "queen_topsongs" {
 
 ## Added by Mithell Ciupak
 data "spotify_track" "cheeseburger_jimmybuffet" {
-  spotify_id = "6VeZ970uI0Yi6sjBgyFBrp"
+  spotify_id = "6VeZ970uI0Yi6sjBgyFBrp"  
 }
 
 

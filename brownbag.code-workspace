@@ -1,0 +1,32 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"tasks": { // CRTL + SHIFT + P -> Tasks 
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "run",
+				"type": "shell",
+				"command": "ls"
+			},
+		]
+	},
+	"launch": { // CRTL + SHIFT + D -> Launch
+		"configurations": [
+			{
+				"type": "node",
+				"request": "launch",
+				"name": "Launch Program",
+				"program": "${workspaceRoot}/bin/www"
+			},
+		],
+		"compounds": []
+	},
+	"settings": {},
+	"extensions": {
+		"recommendations": ["ms-vscode-remote.remote-containers"]
+	}
+}

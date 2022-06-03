@@ -39,26 +39,59 @@
 
 
 
-def Introduce_DevOps():
-    print("where the info is") 
+def Introduce_IaCBasic():
+    # I. What is Infrastructure as Code?
+    # a. The Problem w/ Manual Configuration
+    # b. Infrastructure as Code (IaC)
     return
-def Introduce_Piplines():
+def Introduce_IaCTools():
+    # II. Popular Infrastructure as Code Tools
+    # a. Declarative v. Imperative
+    # b. Declarative Examples (Azure Blueprints, AWS Cloudformation, Cloud Deployment Manager, **Terraform**)
+    # c. Imperative Examples (AWS CKD)
+    # d. More abt Terraform
     return
-def Introduce_GitVersionControl():
+def Introduce_InfraLifecycles():
+    # III. Infrastructure Lifecycle
+    # a. What is an Infrastructure's Lifecycle?
+    # b. An Infrastructure Lifecycle Example
     return
-def Introduce_GitHub():
+def Introduce_InfraTools():
+    # IV. Provisioning v. Deployment v. Ochestration
+    # a. Provisioning
+    # b. Deployment
+    # c. Ochestration
+    return
+def Introduce_GitOps():
+    # V. What is GitOps?
+    return
+def Introduce_Terraform():
+    # VI. Terraform Re-Intro
+    # a. What is Terraform Again?
+    # b. Terraform Lifecycle
+    # c. Change Automation
+    # d. Execution Plans
+    # e. Resource Graphs
+    # f. Use Cases
     return
 
 def Introduction():
-    Introduce_DevOps()
-    Introduce_Piplines()
-    Introduce_GitVersionControl()
-    Introduce_GitHub()
+    Introduce_IaCBasic()
+    Introduce_IaCTools()
+    Introduce_InfraLifecycles()
+    Introduce_InfraTools()
+    Introduce_GitOps()
+    Introduce_Terraform()
+
+def Introduce_TerraformSpotifyPlugin():
+    return
+def Introduce_ContributionRules():
+    return
 
 def Workshop():
-    # SignIntoGitHub()
-    # CloneTheRepository()
-    return
+    Introduce_Terraform()
+    Introduce_TerraformSpotifyPlugin()
+    Introduce_ContributionRules()
 
 def Agenda():
     Introduction()

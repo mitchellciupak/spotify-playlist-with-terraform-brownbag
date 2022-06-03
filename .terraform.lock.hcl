@@ -6,6 +6,7 @@ provider "registry.terraform.io/conradludgate/spotify" {
   constraints = "~> 0.2.6"
   hashes = [
     "h1:MZ/zFwEjq+7aRgFOOP1U2R2jyt5/vbczFrKWaod0IYw=",
+    "h1:wdJjcGLiJdgUg+Nkq45kn/Z2ZG63W/QCsj6M27Z7Pso=",
     "zh:0babfe7700c4067f1d012fcb4ad6400e3e4e7a5cb13a4fd4fe471b72daa2fcc6",
     "zh:0d6c5fabdf78ac72383d05bba63f042ee9babc92bec8cc05d2a3e2f8d61567fe",
     "zh:18e55fb5eb0287a13b0fe37d57ee07be82e8e74e88a49d5b867d0f2c705db562",

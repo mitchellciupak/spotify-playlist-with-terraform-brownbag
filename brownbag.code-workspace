@@ -37,7 +37,6 @@
 				"type": "shell",
 				"command": "cd ${workspaceFolder} && terraform destroy"
 			},
-
 		]
 	},
 	"launch": { // CRTL + SHIFT + D -> Launch

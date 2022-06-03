@@ -34,15 +34,59 @@ VII. (Workshop) Let's use some Terraform
   e. Merge and Deploy!!!
 ```
 ## Contributing Rules
+The following is an outline of the basic process of contributing to open source projects on GitHub:
+### **Step 1: Create or Sign Into Your GitHub Account**
+Please Refer to the [./presentation/IaC_brownbag_CreateAGitHubAccount.pdf](https://github.com/mitchellciupak/spotify-playlist-with-terraform-brownbag/blob/main/presentation/IaC_brownbag_CreateAGitHubAccount.pdf) document for instructions on how to signup for github, otherwise sign into your account at https://github.com/.
+### **Step 2: Navigate to The 'spotify-playlist-with-terraform-brownbag' Repository**
+Use the following link ot get to the 'spotify-playlist-with-terraform-brownbag' Repository: https://github.com/mitchellciupak/spotify-playlist-with-terraform-brownbag
+### **Step 3: Add your song to [./main.tf](https://github.com/mitchellciupak/spotify-playlist-with-terraform-brownbag/blob/main/main.tf)**
+1. Go to [./main.tf](https://github.com/mitchellciupak/spotify-playlist-with-terraform-brownbag/blob/main/main.tf) and select 'fork and contibute' in the top right corner. This will automatically fork the original repository into your own account.
+2. Add your song as a data element
+3. Add that song to the playlist
+4. Commit
+### **Step 4: Make PR**
+1. Go to [spotify-playlist-with-terraform-brownbag Pull Requests](https://github.com/mitchellciupak/spotify-playlist-with-terraform-brownbag/pulls)
+2. Create a New pull request
+3. 
+## Usage
+If you are using vs code, open the directory with the workspace ./brownbag.code-workspace or refer to the following json for potential tasks
 ```
-TODO - build out
-suggest
-fork
-merge pr
+		"tasks": [
+			{
+				"label": "extensions-install",
+				"type": "shell",
+				"command": "sudo chmod 777 ./scripts/extensions-install.sh && ${workspaceFolder}/scripts/extensions-install.sh"
+			},
+			{
+				"label": "tf-install",
+				"type": "shell",
+				"command": "sudo chmod 777 ./scripts/tf-install.sh && ${workspaceFolder}/scripts/tf-install.sh"
+			},
+			{
+				"label": "tf-init",
+				"type": "shell",
+				"command": "cd ${workspaceFolder} && terraform init"
+			},
+			{
+				"label": "run-proxy",
+				"type": "shell",
+				"command": "sudo chmod 777 ./scripts/run-proxy.sh && ${workspaceFolder}/scripts/run-proxy.sh"
+			},
+			{
+				"label": "tf-apply",
+				"type": "shell",
+				"command": "cd ${workspaceFolder} && terraform apply"
+			},
+			{
+				"label": "tf-destroy",
+				"type": "shell",
+				"command": "cd ${workspaceFolder} && terraform destroy"
+			},
+		]
 ```
 
 ## Resources
-- https://learn.hashicorp.com/tutorials/terraform/spotify-playlist
-- https://github.com/hashicorp/learn-terraform-spotify
-- https://github.com/conradludgate/terraform-provider-spotify
-- https://www.youtube.com/watch?v=V4waklkBC38
+- [Terraform Official How To - Guide](https://learn.hashicorp.com/tutorials/terraform/spotify-playlist)
+- [Terraform Official How To - Repo](https://github.com/hashicorp/learn-terraform-spotify)
+- [Terraform Spotify Plugin](https://github.com/conradludgate/terraform-provider-spotify)
+- [Terraform Overview](https://www.youtube.com/watch?v=V4waklkBC38)

@@ -32,6 +32,11 @@
 				"type": "shell",
 				"command": "cd ${workspaceFolder} && terraform apply"
 			},
+			{
+				"label": "tf-destroy",
+				"type": "shell",
+				"command": "cd ${workspaceFolder} && terraform destroy"
+			},
 
 		]
 	},

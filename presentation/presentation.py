@@ -37,9 +37,11 @@ def Introduce_IaCTools():
     print("Terraform is a delcerative IaC tool with it's own language that supports loops, complex data strucures, and dynamic blocks to a limited functional capacity. Offering the best of both worlds.")
     return
 def Introduce_InfraLifecycles():
-    # III. Infrastructure Lifecycle
-    # a. What is an Infrastructure's Lifecycle?
-    # b. An Infrastructure Lifecycle Example
+    print(color.BOLD + color.UNDERLINE + "III. Infrastructure Lifecycle" + color.END)
+    print(color.UNDERLINE + "\na. What is an Infrastructure's Lifecycle?" + color.END)
+    print("A number of clearly defined and distinct work phases which are used by DevOps Engineers to plan, design, build, test, deliver, maintain, and retire cloud infrastucture.")
+    print(color.UNDERLINE + "\nb. An Infrastructure Lifecycle Example" + color.END)
+    print("------REMOVED FOR TIME--------")
     return
 def Introduce_InfraTools():
     # IV. Provisioning v. Deployment v. Ochestration

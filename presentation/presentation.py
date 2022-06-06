@@ -5,44 +5,22 @@
 # 20210921
 # Mitchell Ciupak
 ##################################
-# Agenda
-    # I. What is Infrastructure as Code?
-    # a. The Problem w/ Manual Configuration
-    # b. Infrastructure as Code (IaC)
-    # II. Popular Infrastructure as Code Tools
-    # a. Declarative v. Imperative
-    # b. Declarative Examples (Azure Blueprints, AWS Cloudformation, Cloud Deployment Manager, **Terraform**)
-    # c. Imperative Examples (AWS CKD)
-    # d. More abt Terraform
-    # III. Infrastructure Lifecycle
-    # a. What is an Infrastructure's Lifecycle?
-    # b. An Infrastructure Lifecycle Example
-    # IV. Provisioning v. Deployment v. Ochestration
-    # a. Provisioning
-    # b. Deployment
-    # c. Ochestration
-    # V. What is GitOps?
-    # VI. Terraform Re-Intro
-    # a. What is Terraform Again?
-    # b. Terraform Lifecycle
-    # c. Change Automation
-    # d. Execution Plans
-    # e. Resource Graphs
-    # f. Use Cases
-    # VII. (Workshop) Let's use some Terraform
-    # a. Code Review & How to Read HCL
-    # b. Get Connected to GitHub
-    # c. Find Your Song
-    # d. Create a PR
-    # e. Merge and Deploy!!!
-##################################
 
-
+from print import color
 
 def Introduce_IaCBasic():
-    # I. What is Infrastructure as Code?
-    # a. The Problem w/ Manual Configuration
-    # b. Infrastructure as Code (IaC)
+    print(color.BLUE + "I. What is Infrastructure as Code?" + color.END)
+    print(color.UNDERLINE + "a. The Problem w/ Manual Configuration" + color.END)
+    print("Manually configuring your cloud infrastructure allow you to easily start using new service offerings to quickly prototype architectures hoewever it comes with many downsides:")
+    print("* It is easy to mis-configure a service throygh human error.")
+    print("* It is difficult to manage or move the expected state of your configuration.")
+    print("* It is difficult to transfer knowledge of the configurations to other team members.")
+    print(color.UNDERLINE + "b. Infrastructure as Code (IaC)" + color.END)
+    print("You simply write a configuration script to automate the creation, updates, and destruction of your cloud infrastructure.")
+    print("* IaC is a blueprint for your infrastructure.")
+    print("* IaC can be easily shared, versioned, and acts as an inventory for your cloud infrastrucure.")
+
+    print("\n Open ./assets/assets-pres/iac-visual.png")
     return
 def Introduce_IaCTools():
     # II. Popular Infrastructure as Code Tools

@@ -1,5 +1,5 @@
 # Spotify-Playlist-with-Terraform-IaC
-This is the Terraform Repo and presentation resources for the NIDC Introduction to IaC brownbag.
+This is the Terraform Repo and presentation resources for the NIDC Introduction to IaC brownbag. (Ju
 
 ## Agenda
 ```

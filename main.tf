@@ -32,16 +32,18 @@ data "spotify_search_track" "queen_topsongs" {
   #  name  = "Bohemian Rhapsody - Remastered 2011"
 }
 
-#### Place Your Song Here ####
-
-
-
-
-#### Place Your Song Here ####
-
-## Added by Mithell Ciupak
 data "spotify_track" "cheeseburger_jimmybuffet" {
   spotify_id = "6VeZ970uI0Yi6sjBgyFBrp"
+}
+
+## Added by Sydney Cholewinski
+data "spotify_track" "callmeback_thestrokes" {
+  spotify_id = "6z5mh42xSM54RncKZMM8hS"
+}
+
+## Added by Mithell Ciupak
+data "spotify_track" "dreams_fleetwoodmac" {
+  spotify_id = "0ofHAoxe9vBkTCp2UQIavz"
 }
 
 ## Added by Ana Dalipi
@@ -62,8 +64,9 @@ resource "spotify_playlist" "playlist" {
     data.spotify_track.jolene_dollyp.id,
     data.spotify_search_track.queen_topsongs.tracks[0].id,
     data.spotify_search_track.queen_topsongs.tracks[1].id,
-    data.spotify_search_track.queen_topsongs.tracks[2].id,    
-    # ADD YOUR SONG TO THE PLAYLIST HERE #
+    data.spotify_search_track.queen_topsongs.tracks[2].id,
+    data.spotify_track.dreams_fleetwoodmac.id
     data.spotify_track.cheeseburger_jimmybuffet.id,
+    data.spotify_track.callmeback_thestrokes.id
   ]
 }

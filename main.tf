@@ -73,6 +73,11 @@ data "spotify_track" "cheeseburger_jimmybuffet" {
   spotify_id = "6VeZ970uI0Yi6sjBgyFBrp"
 }
 
+## Added by Drew Grattafiori
+data "spotify_track" "LeanOnMe_BillWithers" {
+  spotify_id = "3M8FzayQWtkvOhqMn2V4T2"
+}
+
 ## Added by Halle Teeter
 data "spotify_track" "Sinceubeengone_KellyClarkson" {
   spotify_id = "04B9ThftHDqviE4uaUJMf1"
@@ -98,6 +103,9 @@ resource "spotify_playlist" "playlist" {
     data.spotify_search_track.queen_topsongs.tracks[2].id,    
     data.spotify_track.margaritaville_jimmybuffet.id
     data.spotify_track.cheeseburger_jimmybuffet.id,
+    data.spotify_track.cheeseburger_jimmybuffet.id,
+    data.spotify_track.callmeback_thestrokes.id,
+    data.spotify_track.LeanOnMe_BillWithers.id,
     data.spotify_track" "BlindingLights_TheWeekend.id,
     data.spotify_search_track.queen_topsongs.tracks[2].id,
     data.spotify_search_track.queen_topsongs.tracks[2].id,

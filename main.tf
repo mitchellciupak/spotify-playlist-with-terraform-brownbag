@@ -46,11 +46,10 @@ data "spotify_track" "dreams_fleetwoodmac" {
   spotify_id = "0ofHAoxe9vBkTCp2UQIavz"
 }
 
-## Added by Ana Dalipi
-data "spotify_track" "modjo_jojo" {
-  spotify_id = "49X0LAl6faAusYq02PRAY6"
+## Added by Corinne Parmalee
+data "spotify_track" "valerie_amywinehouse" {
+  spotify_id = "6kopmMZiyLmw7h66uXcXR7"
 }
-
 
 #### Playlsit ####
 
@@ -67,6 +66,7 @@ resource "spotify_playlist" "playlist" {
     data.spotify_search_track.queen_topsongs.tracks[2].id,
     data.spotify_track.dreams_fleetwoodmac.id
     data.spotify_track.cheeseburger_jimmybuffet.id,
-    data.spotify_track.callmeback_thestrokes.id
+    data.spotify_track.callmeback_thestrokes.id,
+    data.spotify_track.valerie_amywinehouse.id
   ]
 }

@@ -36,6 +36,10 @@ data "spotify_track" "ribs_lorde" {
   spotify_id = "2MvvoeRt8NcOXWESkxWn3g"
 }
 
+data "spotify_track" "BlindingLights_TheWeekend.id" {
+  spotify_id = "0VjIjW4GlUZAMYd2vXMi3b"
+}
+
 ## Added by Rohith Sri
 data "spotify_track" "highwaytohell_acdc" {
   spotify_id = "2zYzyRzz6pRmhPzyfMEC8s"
@@ -88,6 +92,8 @@ resource "spotify_playlist" "playlist" {
     data.spotify_track.jolene_dollyp.id,
     data.spotify_search_track.queen_topsongs.tracks[0].id,
     data.spotify_search_track.queen_topsongs.tracks[1].id,
+    data.spotify_search_track.queen_topsongs.tracks[2].id,    
+    data.spotify_track" "BlindingLights_TheWeekend.id,
     data.spotify_search_track.queen_topsongs.tracks[2].id,
     data.spotify_search_track.queen_topsongs.tracks[2].id,
     data.spotify_track.dreams_fleetwoodmac.id,

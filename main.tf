@@ -34,12 +34,13 @@ data "spotify_search_track" "queen_topsongs" {
 
 #### Place Your Song Here ####
 
-## Added by Sydney Cholewinski
-data "spotify_track" "callmeback_thestrokes" {
-  spotify_id = "6z5mh42xSM54RncKZMM8hS"
-}
+
 
 #### Place Your Song Here ####
+##Added by Nicole Cooney
+data "spotify_track" "richgirl_hallandoates" {
+  spotify_id = "0qRR9d89hIS0MHRkQ0ejxX"
+}
 
 ## Added by Mithell Ciupak
 data "spotify_track" "cheeseburger_jimmybuffet" {
@@ -61,7 +62,7 @@ resource "spotify_playlist" "playlist" {
     data.spotify_search_track.queen_topsongs.tracks[1].id,
     data.spotify_search_track.queen_topsongs.tracks[2].id,    
     # ADD YOUR SONG TO THE PLAYLIST HERE #
+    data.spotify_track.richgirl_hallandoates.id,
     data.spotify_track.cheeseburger_jimmybuffet.id,
-    data.spotify_track.callmeback_thestrokes.id
   ]
 }

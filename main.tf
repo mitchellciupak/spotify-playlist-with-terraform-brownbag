@@ -53,16 +53,22 @@ data "spotify_track" "cheeseburger_jimmybuffet" {
   spotify_id = "6VeZ970uI0Yi6sjBgyFBrp"
 }
 
-# Song by ID
 data "spotify_track" "woman_twayne" {
   # Take a look at the url below --> track == 5fdhThPDe6jQQDqCyWrdAn
   # https://open.spotify.com/track/5fdhThPDe6jQQDqCyWrdAn?si=615eb81192da4028
   spotify_id = "6sxptembJVty4sNtcPMAVz"
 }
 
+#### Place Your Song Here ####
+
 ## Added by Mithell Ciupak
-data "spotify_track" "dreams_fleetwoodmac" {
-  spotify_id = "0ofHAoxe9vBkTCp2UQIavz"
+data "spotify_track" "cheeseburger_jimmybuffet" {
+  spotify_id = "6VeZ970uI0Yi6sjBgyFBrp"
+}
+
+## Added by Halle Teeter
+data "spotify_track" "Sinceubeengone_KellyClarkson" {
+  spotify_id = "04B9ThftHDqviE4uaUJMf1"
 }
 
 ## Added by Corinne Parmalee
@@ -83,7 +89,9 @@ resource "spotify_playlist" "playlist" {
     data.spotify_search_track.queen_topsongs.tracks[0].id,
     data.spotify_search_track.queen_topsongs.tracks[1].id,
     data.spotify_search_track.queen_topsongs.tracks[2].id,
+    data.spotify_search_track.queen_topsongs.tracks[2].id,
     data.spotify_track.dreams_fleetwoodmac.id,
+    data.spotify_track.Sinceubeengone_KellyClarkson.id,
     data.spotify_track.cheeseburger_jimmybuffet.id,
     data.spotify_track.highwaytohell_acdc.id,
     data.spotify_track.woman_twayne.id,

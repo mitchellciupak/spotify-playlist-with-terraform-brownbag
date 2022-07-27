@@ -34,6 +34,10 @@ data "spotify_search_track" "queen_topsongs" {
 
 #### Place Your Song Here ####
 
+## Added by Corinne Parmalee
+data "spotify_track" "valerie_amywinehouse" {
+  spotify_id = "6kopmMZiyLmw7h66uXcXR7"
+}
 
 
 #### Place Your Song Here ####

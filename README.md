@@ -11,9 +11,6 @@ II. Popular Infrastructure as Code Tools
   b. Declarative Examples (Azure Blueprints, AWS Cloudformation, Cloud Deployment Manager, **Terraform**)
   c. Imperative Examples (AWS CKD)
   d. More abt Terraform
-III. Infrastructure Lifecycle
-  a. What is an Infrastructure's Lifecycle?
-  b. An Infrastructure Lifecycle Example
 IV. Provisioning v. Deployment v. Ochestration
   a. Provisioning
   b. Deployment
@@ -38,7 +35,7 @@ The following is an outline of the basic process of contributing to open source 
 ### **Step 1: Create or Sign Into Your GitHub Account**
 Please Refer to the [./presentation/IaC_brownbag_CreateAGitHubAccount.pdf](https://github.com/mitchellciupak/spotify-playlist-with-terraform-brownbag/blob/main/presentation/IaC_brownbag_CreateAGitHubAccount.pdf) document for instructions on how to signup for github, otherwise sign into your account at https://github.com/.
 ### **Step 2: Navigate to The 'spotify-playlist-with-terraform-brownbag' Repository**
-Use the following link ot get to the 'spotify-playlist-with-terraform-brownbag' Repository: https://github.com/mitchellciupak/spotify-playlist-with-terraform-brownbag
+Use the following link to get to the 'spotify-playlist-with-terraform-brownbag' Repository: https://github.com/mitchellciupak/spotify-playlist-with-terraform-brownbag
 ### **Step 3: Add your song to [./main.tf](https://github.com/mitchellciupak/spotify-playlist-with-terraform-brownbag/blob/main/main.tf)**
 1. Go to [./main.tf](https://github.com/mitchellciupak/spotify-playlist-with-terraform-brownbag/blob/main/main.tf) and select 'fork this project and edit this file' in the top right corner. This will automatically fork the original repository into your own account.
 ![3.1](assets/3.1.jpg)

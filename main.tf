@@ -32,6 +32,12 @@ data "spotify_search_track" "queen_topsongs" {
   #  name  = "Bohemian Rhapsody - Remastered 2011"
 }
 
+#### Place Your Song Here ####
+## Added by Jacob Beard
+data "spotify_track" "1985_bowlingforsoup" {
+  spotify_id = "5oQcOu1omDykbIPSdSQQNJ"
+}
+
 data "spotify_track" "ribs_lorde" {
   spotify_id = "2MvvoeRt8NcOXWESkxWn3g"
 }
@@ -121,6 +127,7 @@ resource "spotify_playlist" "playlist" {
     data.spotify_track.dreams_fleetwoodmac.id,
     data.spotify_track.Sinceubeengone_KellyClarkson.id,
     data.spotify_track.cheeseburger_jimmybuffet.id,
+    data.spotify_track.1985_bowlingforsoup.id
     data.spotify_track.likegold_vancejoy,
     data.spotify_track.highwaytohell_acdc.id,
     data.spotify_track.woman_twayne.id,

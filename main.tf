@@ -33,8 +33,9 @@ data "spotify_search_track" "queen_topsongs" {
 }
 
 #### Place Your Song Here ####
-
-
+data "spotify_track" "ribs_lorde" {
+  spotify_id = "2MvvoeRt8NcOXWESkxWn3g"
+}
 
 #### Place Your Song Here ####
 
@@ -59,5 +60,6 @@ resource "spotify_playlist" "playlist" {
     data.spotify_search_track.queen_topsongs.tracks[2].id,    
     # ADD YOUR SONG TO THE PLAYLIST HERE #
     data.spotify_track.cheeseburger_jimmybuffet.id,
+     data.spotify_track.ribs_lorde.id,
   ]
 }

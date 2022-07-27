@@ -63,6 +63,10 @@ data "spotify_track" "Goodbye_Stranger_Supertramp" {
   spotify_id = "5dE8s6uWRGNc1Ac7y8rULq"
 }
 
+data "spotify_track" "likegold_vancejoy" {
+  spotify_id = "6Od2OWvoT4embWAgIGeFRd"
+}
+
 data "spotify_track" "cheeseburger_jimmybuffet" {
   spotify_id = "6VeZ970uI0Yi6sjBgyFBrp"
 }
@@ -117,6 +121,7 @@ resource "spotify_playlist" "playlist" {
     data.spotify_track.dreams_fleetwoodmac.id,
     data.spotify_track.Sinceubeengone_KellyClarkson.id,
     data.spotify_track.cheeseburger_jimmybuffet.id,
+    data.spotify_track.likegold_vancejoy,
     data.spotify_track.highwaytohell_acdc.id,
     data.spotify_track.woman_twayne.id,
     data.spotify_track.callmeback_thestrokes.id,

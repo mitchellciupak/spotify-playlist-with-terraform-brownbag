@@ -34,10 +34,7 @@ data "spotify_search_track" "queen_topsongs" {
 
 #### Place Your Song Here ####
 
-## Added by Sydney Cholewinski
-data "spotify_track" "callmeback_thestrokes" {
-  spotify_id = "6z5mh42xSM54RncKZMM8hS"
-}
+"spotify_track" "BlindingLights_TheWeekend.id"
 
 #### Place Your Song Here ####
 
@@ -60,8 +57,7 @@ resource "spotify_playlist" "playlist" {
     data.spotify_search_track.queen_topsongs.tracks[0].id,
     data.spotify_search_track.queen_topsongs.tracks[1].id,
     data.spotify_search_track.queen_topsongs.tracks[2].id,    
-    # ADD YOUR SONG TO THE PLAYLIST HERE #
-    data.spotify_track.cheeseburger_jimmybuffet.id,
-    data.spotify_track.callmeback_thestrokes.id
+    # ENTER YOUR SONG NAME HERE #
+    data.spotify_track" "BlindingLights_TheWeekend.id,
   ]
 }

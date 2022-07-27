@@ -32,7 +32,21 @@ data "spotify_search_track" "queen_topsongs" {
   #  name  = "Bohemian Rhapsody - Remastered 2011"
 }
 
-#### Place Your Song Here ####
+data "spotify_track" "ribs_lorde" {
+  spotify_id = "2MvvoeRt8NcOXWESkxWn3g"
+}
+
+data "spotify_track" "DontBringMeDown_ELO" {
+  spotify_id = "72ahyckBJfTigJCFCviVN7"
+}
+
+data "spotify_track" "Goodbye_Stranger_Supertramp" {
+  spotify_id = "5dE8s6uWRGNc1Ac7y8rULq"
+}
+
+data "spotify_track" "cheeseburger_jimmybuffet" {
+  spotify_id = "6VeZ970uI0Yi6sjBgyFBrp"
+}
 
 # Song by ID
 data "spotify_track" "woman_twayne" {
@@ -41,13 +55,15 @@ data "spotify_track" "woman_twayne" {
   spotify_id = "6sxptembJVty4sNtcPMAVz"
 }
 
-#### Place Your Song Here ####
-
 ## Added by Mithell Ciupak
-data "spotify_track" "cheeseburger_jimmybuffet" {
-  spotify_id = "6VeZ970uI0Yi6sjBgyFBrp"
+data "spotify_track" "dreams_fleetwoodmac" {
+  spotify_id = "0ofHAoxe9vBkTCp2UQIavz"
 }
 
+## Added by Corinne Parmalee
+data "spotify_track" "valerie_amywinehouse" {
+  spotify_id = "6kopmMZiyLmw7h66uXcXR7"
+}
 
 #### Playlsit ####
 
@@ -61,9 +77,15 @@ resource "spotify_playlist" "playlist" {
     data.spotify_track.jolene_dollyp.id,
     data.spotify_search_track.queen_topsongs.tracks[0].id,
     data.spotify_search_track.queen_topsongs.tracks[1].id,
-    data.spotify_search_track.queen_topsongs.tracks[2].id,    
-    # ADD YOUR SONG TO THE PLAYLIST HERE #
+    data.spotify_search_track.queen_topsongs.tracks[2].id,
+    data.spotify_track.dreams_fleetwoodmac.id,
     data.spotify_track.cheeseburger_jimmybuffet.id,
-    data.spotify_track.woman_twayne.id
+    data.spotify_track.woman_twayne.id,
+    data.spotify_track.callmeback_thestrokes.id,
+    data.spotify_track.valerie_amywinehouse.id,
+    data.spotify_track.ribs_lorde.id,
+    data.spotify_track.DontBringMeDown_ELO.id,
+    data.spotify_track.Goodbye_Stranger_Supertramp.id,
+    data.spotify_track.callmeback_thestrokes.id,
   ]
 }

@@ -34,13 +34,15 @@ data "spotify_search_track" "queen_topsongs" {
 
 #### Place Your Song Here ####
 
-
+data "spotify_track" "cheeseburger_jimmybuffet" {
+  spotify_id = "6VeZ970uI0Yi6sjBgyFBrp"
+}
 
 #### Place Your Song Here ####
 
 ## Added by Mithell Ciupak
-data "spotify_track" "cheeseburger_jimmybuffet" {
-  spotify_id = "6VeZ970uI0Yi6sjBgyFBrp"
+data "spotify_track" "dreams_fleetwoodmac" {
+  spotify_id = "0ofHAoxe9vBkTCp2UQIavz"
 }
 
 
@@ -58,6 +60,7 @@ resource "spotify_playlist" "playlist" {
     data.spotify_search_track.queen_topsongs.tracks[1].id,
     data.spotify_search_track.queen_topsongs.tracks[2].id,    
     # ADD YOUR SONG TO THE PLAYLIST HERE #
+    data.spotify_track.dreams_fleetwoodmac.id
     data.spotify_track.cheeseburger_jimmybuffet.id,
   ]
 }

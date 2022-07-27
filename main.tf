@@ -48,9 +48,11 @@ data "spotify_track" "cheeseburger_jimmybuffet" {
   spotify_id = "6VeZ970uI0Yi6sjBgyFBrp"
 }
 
-## Added by Sydney Cholewinski
-data "spotify_track" "callmeback_thestrokes" {
-  spotify_id = "6z5mh42xSM54RncKZMM8hS"
+# Song by ID
+data "spotify_track" "woman_twayne" {
+  # Take a look at the url below --> track == 5fdhThPDe6jQQDqCyWrdAn
+  # https://open.spotify.com/track/5fdhThPDe6jQQDqCyWrdAn?si=615eb81192da4028
+  spotify_id = "6sxptembJVty4sNtcPMAVz"
 }
 
 ## Added by Mithell Ciupak
@@ -78,6 +80,7 @@ resource "spotify_playlist" "playlist" {
     data.spotify_search_track.queen_topsongs.tracks[2].id,
     data.spotify_track.dreams_fleetwoodmac.id,
     data.spotify_track.cheeseburger_jimmybuffet.id,
+    data.spotify_track.woman_twayne.id,
     data.spotify_track.callmeback_thestrokes.id,
     data.spotify_track.valerie_amywinehouse.id,
     data.spotify_track.ribs_lorde.id,

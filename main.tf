@@ -49,6 +49,11 @@ data "spotify_track" "DontBringMeDown_ELO" {
   spotify_id = "72ahyckBJfTigJCFCviVN7"
 }
 
+## Added by Alex Scogin
+data "spotify_track" "margaritaville_jimmybuffet" {
+  spotify_id = "57FvuUotRyzRl8hwIhCVuO"
+}
+
 data "spotify_track" "Goodbye_Stranger_Supertramp" {
   spotify_id = "5dE8s6uWRGNc1Ac7y8rULq"
 }
@@ -62,8 +67,6 @@ data "spotify_track" "woman_twayne" {
   # https://open.spotify.com/track/5fdhThPDe6jQQDqCyWrdAn?si=615eb81192da4028
   spotify_id = "6sxptembJVty4sNtcPMAVz"
 }
-
-#### Place Your Song Here ####
 
 ## Added by Mithell Ciupak
 data "spotify_track" "cheeseburger_jimmybuffet" {
@@ -98,8 +101,10 @@ resource "spotify_playlist" "playlist" {
     data.spotify_search_track.queen_topsongs.tracks[0].id,
     data.spotify_search_track.queen_topsongs.tracks[1].id,
     data.spotify_search_track.queen_topsongs.tracks[2].id,    
+    data.spotify_track.margaritaville_jimmybuffet.id
     data.spotify_track.cheeseburger_jimmybuffet.id,
-    data.spotify_track.callmeback_thestrokes.id
+    data.spotify_track.cheeseburger_jimmybuffet.id,
+    data.spotify_track.callmeback_thestrokes.id,
     data.spotify_track.LeanOnMe_BillWithers.id,
     data.spotify_track" "BlindingLights_TheWeekend.id,
     data.spotify_search_track.queen_topsongs.tracks[2].id,

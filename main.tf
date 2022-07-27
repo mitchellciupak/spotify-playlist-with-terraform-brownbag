@@ -34,7 +34,7 @@ data "spotify_search_track" "queen_topsongs" {
 
 #### Place Your Song Here ####
 ## Added by Jacob Beard
-data "spotify_track" "1985_bowlingforsoup" {
+data "spotify_track" "bowlingforsoup" {
   spotify_id = "5oQcOu1omDykbIPSdSQQNJ"
 }
 
@@ -111,31 +111,29 @@ resource "spotify_playlist" "playlist" {
   tracks = [
     data.spotify_track.ninetofive_dollyp.id,
     data.spotify_track.jolene_dollyp.id,
-    data.spotify_search_track.queen_topsongs.tracks[0].id,
-    data.spotify_search_track.queen_topsongs.tracks[1].id,
-    data.spotify_search_track.queen_topsongs.tracks[2].id,    
     data.spotify_track.richgirl_hallandoates.id,
-    data.spotify_track.cheeseburger_jimmybuffet.id,
-    data.spotify_track.margaritaville_jimmybuffet.id
-    data.spotify_track.cheeseburger_jimmybuffet.id,
+    data.spotify_track.margaritaville_jimmybuffet.id,
     data.spotify_track.cheeseburger_jimmybuffet.id,
     data.spotify_track.callmeback_thestrokes.id,
     data.spotify_track.LeanOnMe_BillWithers.id,
-    data.spotify_track" "BlindingLights_TheWeekend.id,
+    data.spotify_track.BlindingLights_TheWeekend.id,
     data.spotify_search_track.queen_topsongs.tracks[2].id,
     data.spotify_search_track.queen_topsongs.tracks[2].id,
     data.spotify_track.dreams_fleetwoodmac.id,
     data.spotify_track.Sinceubeengone_KellyClarkson.id,
-    data.spotify_track.cheeseburger_jimmybuffet.id,
-    data.spotify_track.1985_bowlingforsoup.id
+    data.spotify_track.bowlingforsoup.id,
     data.spotify_track.likegold_vancejoy,
     data.spotify_track.highwaytohell_acdc.id,
     data.spotify_track.woman_twayne.id,
     data.spotify_track.callmeback_thestrokes.id,
     data.spotify_track.valerie_amywinehouse.id,
+    data.spotify_track.rocketMan.id,
     data.spotify_track.ribs_lorde.id,
     data.spotify_track.DontBringMeDown_ELO.id,
     data.spotify_track.Goodbye_Stranger_Supertramp.id,
     data.spotify_track.callmeback_thestrokes.id,
+    data.spotify_search_track.queen_topsongs.tracks[0].id,
+    data.spotify_search_track.queen_topsongs.tracks[1].id,
+    data.spotify_search_track.queen_topsongs.tracks[2].id, 
   ]
 }

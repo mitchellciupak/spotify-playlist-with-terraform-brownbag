@@ -46,6 +46,11 @@ data "spotify_track" "dreams_fleetwoodmac" {
   spotify_id = "0ofHAoxe9vBkTCp2UQIavz"
 }
 
+## Added by Ana Dalipi
+data "spotify_track" "modjo_jojo" {
+  spotify_id = "49X0LAl6faAusYq02PRAY6"
+}
+
 
 #### Playlsit ####
 

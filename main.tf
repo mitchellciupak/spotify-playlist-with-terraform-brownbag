@@ -33,7 +33,8 @@ data "spotify_search_track" "queen_topsongs" {
 }
 
 #### Place Your Song Here ####
-
+data "spotify_track" "Goodbye Stranger_Supertramp" {
+  spotify_id = "5dE8s6uWRGNc1Ac7y8rULq"
 
 
 #### Place Your Song Here ####
@@ -59,5 +60,6 @@ resource "spotify_playlist" "playlist" {
     data.spotify_search_track.queen_topsongs.tracks[2].id,    
     # ADD YOUR SONG TO THE PLAYLIST HERE #
     data.spotify_track.cheeseburger_jimmybuffet.id,
+    data.spotify_track.Goodbye Stranger_Supertramp.id
   ]
 }

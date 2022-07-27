@@ -32,6 +32,10 @@ data "spotify_search_track" "queen_topsongs" {
   #  name  = "Bohemian Rhapsody - Remastered 2011"
 }
 
+data "spotify_track" "ribs_lorde" {
+  spotify_id = "2MvvoeRt8NcOXWESkxWn3g"
+}
+
 data "spotify_track" "DontBringMeDown_ELO" {
   spotify_id = "72ahyckBJfTigJCFCviVN7"
 }
@@ -73,10 +77,11 @@ resource "spotify_playlist" "playlist" {
     data.spotify_search_track.queen_topsongs.tracks[0].id,
     data.spotify_search_track.queen_topsongs.tracks[1].id,
     data.spotify_search_track.queen_topsongs.tracks[2].id,
-    data.spotify_track.dreams_fleetwoodmac.id
+    data.spotify_track.dreams_fleetwoodmac.id,
     data.spotify_track.cheeseburger_jimmybuffet.id,
+    data.spotify_track.ribs_lorde.id,
     data.spotify_track.DontBringMeDown_ELO.id,
-    data.spotify_track.Goodbye_Stranger_Supertramp.id
-    data.spotify_track.callmeback_thestrokes.id
+    data.spotify_track.Goodbye_Stranger_Supertramp.id,
+    data.spotify_track.callmeback_thestrokes.id,
   ]
 }

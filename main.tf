@@ -36,6 +36,11 @@ data "spotify_track" "ribs_lorde" {
   spotify_id = "2MvvoeRt8NcOXWESkxWn3g"
 }
 
+## Added by Rohith Sri
+data "spotify_track" "highwaytohell_acdc" {
+  spotify_id = "2zYzyRzz6pRmhPzyfMEC8s"
+}
+
 data "spotify_track" "DontBringMeDown_ELO" {
   spotify_id = "72ahyckBJfTigJCFCviVN7"
 }
@@ -80,6 +85,7 @@ resource "spotify_playlist" "playlist" {
     data.spotify_search_track.queen_topsongs.tracks[2].id,
     data.spotify_track.dreams_fleetwoodmac.id,
     data.spotify_track.cheeseburger_jimmybuffet.id,
+    data.spotify_track.highwaytohell_acdc.id,
     data.spotify_track.woman_twayne.id,
     data.spotify_track.callmeback_thestrokes.id,
     data.spotify_track.valerie_amywinehouse.id,

@@ -33,6 +33,7 @@ data "spotify_search_track" "queen_topsongs" {
 }
 
 #### Place Your Song Here ####
+
 ## Added by Jacob Beard
 data "spotify_track" "bowlingforsoup" {
   spotify_id = "5oQcOu1omDykbIPSdSQQNJ"
@@ -42,7 +43,7 @@ data "spotify_track" "ribs_lorde" {
   spotify_id = "2MvvoeRt8NcOXWESkxWn3g"
 }
 
-data "spotify_track" "BlindingLights_TheWeekend.id" {
+data "spotify_track" "BlindingLights_TheWeekend" {
   spotify_id = "0VjIjW4GlUZAMYd2vXMi3b"
 }
 
@@ -81,6 +82,10 @@ data "spotify_track" "woman_twayne" {
   spotify_id = "6sxptembJVty4sNtcPMAVz"
 }
 
+data "spotify_track" "dreams_fleetwoodmac" {
+  spotify_id = "0ofHAoxe9vBkTCp2UQIavz"
+}
+
 ## Added by Zachary Ables
 data "spotify_track" "rocketMan" {
   spotify_id = "3gdewACMIVMEWVbyb8O9sY"
@@ -101,6 +106,10 @@ data "spotify_track" "valerie_amywinehouse" {
   spotify_id = "6kopmMZiyLmw7h66uXcXR7"
 }
 
+data "spotify_track" "callmeback_thestrokes" {
+  spotify_id = "6z5mh42xSM54RncKZMM8hS"
+}
+
 #### Playlsit ####
 
 resource "spotify_playlist" "playlist" {
@@ -114,18 +123,14 @@ resource "spotify_playlist" "playlist" {
     data.spotify_track.richgirl_hallandoates.id,
     data.spotify_track.margaritaville_jimmybuffet.id,
     data.spotify_track.cheeseburger_jimmybuffet.id,
-    data.spotify_track.callmeback_thestrokes.id,
     data.spotify_track.LeanOnMe_BillWithers.id,
     data.spotify_track.BlindingLights_TheWeekend.id,
-    data.spotify_search_track.queen_topsongs.tracks[2].id,
-    data.spotify_search_track.queen_topsongs.tracks[2].id,
     data.spotify_track.dreams_fleetwoodmac.id,
     data.spotify_track.Sinceubeengone_KellyClarkson.id,
     data.spotify_track.bowlingforsoup.id,
-    data.spotify_track.likegold_vancejoy,
+    data.spotify_track.likegold_vancejoy.id,
     data.spotify_track.highwaytohell_acdc.id,
     data.spotify_track.woman_twayne.id,
-    data.spotify_track.callmeback_thestrokes.id,
     data.spotify_track.valerie_amywinehouse.id,
     data.spotify_track.rocketMan.id,
     data.spotify_track.ribs_lorde.id,

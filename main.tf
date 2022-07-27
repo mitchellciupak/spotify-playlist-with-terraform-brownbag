@@ -54,6 +54,11 @@ data "spotify_track" "margaritaville_jimmybuffet" {
   spotify_id = "57FvuUotRyzRl8hwIhCVuO"
 }
 
+##Added by Nicole Cooney
+data "spotify_track" "richgirl_hallandoates" {
+  spotify_id = "0qRR9d89hIS0MHRkQ0ejxX"
+}
+
 data "spotify_track" "Goodbye_Stranger_Supertramp" {
   spotify_id = "5dE8s6uWRGNc1Ac7y8rULq"
 }
@@ -63,8 +68,6 @@ data "spotify_track" "cheeseburger_jimmybuffet" {
 }
 
 data "spotify_track" "woman_twayne" {
-  # Take a look at the url below --> track == 5fdhThPDe6jQQDqCyWrdAn
-  # https://open.spotify.com/track/5fdhThPDe6jQQDqCyWrdAn?si=615eb81192da4028
   spotify_id = "6sxptembJVty4sNtcPMAVz"
 }
 
@@ -101,6 +104,8 @@ resource "spotify_playlist" "playlist" {
     data.spotify_search_track.queen_topsongs.tracks[0].id,
     data.spotify_search_track.queen_topsongs.tracks[1].id,
     data.spotify_search_track.queen_topsongs.tracks[2].id,    
+    data.spotify_track.richgirl_hallandoates.id,
+    data.spotify_track.cheeseburger_jimmybuffet.id,
     data.spotify_track.margaritaville_jimmybuffet.id
     data.spotify_track.cheeseburger_jimmybuffet.id,
     data.spotify_track.cheeseburger_jimmybuffet.id,

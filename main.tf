@@ -34,9 +34,8 @@ data "spotify_search_track" "queen_topsongs" {
 
 #### Place Your Song Here ####
 
-## Added by Sydney Cholewinski
-data "spotify_track" "callmeback_thestrokes" {
-  spotify_id = "6z5mh42xSM54RncKZMM8hS"
+data "spotify_track" "likegold_vancejoy" {
+  spotify_id = "6Od2OWvoT4embWAgIGeFRd"
 }
 
 #### Place Your Song Here ####
@@ -62,6 +61,6 @@ resource "spotify_playlist" "playlist" {
     data.spotify_search_track.queen_topsongs.tracks[2].id,    
     # ADD YOUR SONG TO THE PLAYLIST HERE #
     data.spotify_track.cheeseburger_jimmybuffet.id,
-    data.spotify_track.callmeback_thestrokes.id
+    data.spotify_track.likegold_vancejoy,
   ]
 }

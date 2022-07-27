@@ -34,10 +34,11 @@ data "spotify_search_track" "queen_topsongs" {
 
 #### Place Your Song Here ####
 
-## Added by Sydney Cholewinski
-data "spotify_track" "callmeback_thestrokes" {
-  spotify_id = "6z5mh42xSM54RncKZMM8hS"
+## Added by Alex Scogin
+data "spotify_track" "margaritaville_jimmybuffet" {
+  spotify_id = "57FvuUotRyzRl8hwIhCVuO"
 }
+
 
 #### Place Your Song Here ####
 
@@ -60,8 +61,7 @@ resource "spotify_playlist" "playlist" {
     data.spotify_search_track.queen_topsongs.tracks[0].id,
     data.spotify_search_track.queen_topsongs.tracks[1].id,
     data.spotify_search_track.queen_topsongs.tracks[2].id,    
-    # ADD YOUR SONG TO THE PLAYLIST HERE #
+    data.spotify_track.margaritaville_jimmybuffet.id
     data.spotify_track.cheeseburger_jimmybuffet.id,
-    data.spotify_track.callmeback_thestrokes.id
   ]
 }

@@ -11,7 +11,7 @@ provider "spotify" {
   api_key = var.spotify_api_key
 }
 
-#### Examples ####
+#### Songs ####
 
 # Song by URL
 data "spotify_track" "ninetofive_dollyp" {
